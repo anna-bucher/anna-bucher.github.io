@@ -25,9 +25,10 @@ h1.album {
 
 div.album-desc {
   position: relative;
-  max-width: 30rem;
+  width: 300px;
   display: table;
-  margin: auto;
+  margin: -90px auto;
+  padding: 100px;
 }
 
 .album-desc .love {
@@ -40,6 +41,46 @@ div.album-desc {
   z-index:-1;
   font-style: normal;
   font-size: 420px;
+  display: none;
+}
+
+.album-desc .heart {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  opacity:0.15;
+  z-index:-1;
+  background-image: url(heart.svg);
+  background-size: cover;
+  background-position-x: 22px;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 130px #00fffa;
+  display:none;
+}
+
+
+@keyframes shadowy {
+  0%, 100%  { 
+    filter: drop-shadow(0 0 230px #00fffa);
+  }
+  50% { 
+    filter: drop-shadow(0 0 230px #ffff00);
+  }
+}
+
+.album-desc svg {
+  position:absolute;
+  top:-30px;
+  left:35px;
+  bottom:0;
+  right:0;
+  opacity:0.35;
+  z-index:-1;
+  filter: drop-shadow(0 0 130px #00fffa);
+  animation: shadowy 3s infinite;
 }
 
 .album-desc p {
@@ -76,6 +117,13 @@ p.what {
   background: #3d0f40;
   box-shadow: 0 0 15px #f51aed;
   text-shadow: 0 0 5px #000000d6;
+}
+
+.qr img {
+  border-style: none;
+  max-width: 20%;
+  display: table;
+  margin: auto;
 }
 
 h3.pre-sale {
