@@ -46,6 +46,17 @@ div.album-desc {
   display: none;
 }
 
+.album-desc img.tree {
+  position:absolute;
+  top:-40px;
+  left:0px;
+  bottom:0;
+  right:0;
+  z-index:20;
+  filter: drop-shadow(0 0 130px #00fffa);
+  animation: shadow 18s infinite;
+}
+
 .album-desc .heart {
   position:absolute;
   top:0;
@@ -64,25 +75,26 @@ div.album-desc {
 }
 
 
-@keyframes shadowy {
+@keyframes shadow {
   0%, 100%  { 
-    filter: drop-shadow(0 0 230px #00fffa);
+    filter: brightness(0.12) drop-shadow(0 10px 130px #00fffa);
   }
   50% { 
-    filter: drop-shadow(0 0 230px #ffff00);
+    filter: brightness(0.08) drop-shadow(0 10px 130px #ffff00);
   }
 }
 
 .album-desc svg {
+  display: none;
   position:absolute;
   top:-30px;
   left:40px;
   bottom:0;
   right:0;
-  opacity:0.3;
+  opacity:0.9;
   z-index:20;
   filter: drop-shadow(0 0 130px #00fffa);
-  animation: shadowy 3s infinite;
+  animation: shadow 3s infinite;
 }
 
 .album-desc p {
