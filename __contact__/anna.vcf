@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Anna Ishq
+N:Ishq;Anna;;;
+item1.EMAIL;TYPE=INTERNET:anna@annaishq.com
+item1.X-ABLabel:
+item2.TEL:078 748 15 38
+item2.X-ABLabel:
+item3.TITLE:artist
+item3.X-ABLabel:
+item4.URL:annaishq.com
+item4.X-ABLabel:Website
+item5.URL:https\://www.instagram.com/annaishq
+item5.X-ABLabel:Instagram
+NOTE:azutim 💖
+CATEGORIES:myContacts
+END:VCARD
