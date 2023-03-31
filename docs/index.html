@@ -31,8 +31,7 @@
 
     <div id='connect' class="sib-form">
       <div id="sib-form-container" class="sib-form-container">
-        <div id="error-message" class="sib-form-message-panel"
-          style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+        <div id="error-message" class="sib-form-message-panel">
           <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
             <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
               <path
@@ -44,8 +43,7 @@
           </div>
         </div>
         <div></div>
-        <div id="success-message" class="sib-form-message-panel"
-          style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+        <div id="success-message" class="sib-form-message-panel">
           <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
             <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
               <path
@@ -59,15 +57,14 @@
         <div></div>
         <div id="sib-container" class="what sib-container--large sib-container--vertical">
           <form id="sib-form" method="POST"
-            action="https://6066d3c8.sibforms.com/serve/MUIEAAaP_6flvjZcH5AN0L61Rxzzx6wpDMdU-9fh3baBND6MhwQWByWCl48tPMPmZ-vDhsFX-GqdOeHAjgzB5S7SAutsKOYIsF0gfic2kL6Sdm47Imyb5l6AcQtgbOGjQaq6gQkxojQcZn6206V5YIFTsziqpNIEVVsCJ16VoSzJDrv8BnLOmEqClLn4IMjpT0uiqn-56hLkByGg"
+            action="https://6066d3c8.sibforms.com/serve/MUIEACrkuE8DnJe7vifA6-b6s6DXR-rZheKGoGQWGhTf4DY7Pmh0g_fMYcXYBaoU5b2J57pppAOBdV3g4PwkDgUSUvot6wr5qjH11TRBuKdD9-8gruKdzD9LN4WJXE8iiqTPilLb0n49VzC7TWwtW88hFDRAYGjBsXICTpxWroWEp97dUqwt0ykZznE2IGnk_n4W8G3n9InJQ-ZF"
             data-type="subscription">
             <div style="padding: 8px 0;">
               <div class="sib-input sib-form-block">
                 <div class="form__entry entry_block">
                   <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="EMAIL" data-required="*">Enter your email address to be notified</label>
+                    <label class="entry__label" for="EMAIL" data-required="*">Enter your email address to be
+                      notified&nbsp;</label>
 
                     <div class="entry__field">
                       <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL"
@@ -75,32 +72,31 @@
                     </div>
                   </div>
 
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  <label class="entry__error entry__error--primary">
                   </label>
-                  <label class="entry__specification"
-                    style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; text-align:left">
-                    For e.g abc@xyz.com
+                  <label class="entry__specification">
+                    For example: abc@xyz.com
                   </label>
                 </div>
               </div>
             </div>
             <div style="padding: 8px 0;">
-              <div class="sib-optin sib-form-block">
+              <div class="sib-optin sib-form-block" data-required="true">
                 <div class="form__entry entry_mcq">
                   <div class="form__label-row ">
                     <div class="entry__choice" style="">
                       <label>
-                        <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" />
+                        <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
                         <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span
                           style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
-                          <p class='agree'>I agree to receive your newsletters and accept the data privacy statement.
+                          <p class='agree'>I agree to receive your newsletters and accept the data privacy
+                            statement.&nbsp;<span data-required="*" style="display: inline;"
+                              class="entry__label entry__label_optin"></span>
                           </p>
                         </span> </label>
                     </div>
                   </div>
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  <label class="entry__error entry__error--primary">
                   </label>
                   <label class="entry__specification"
                     style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c3651; text-align:left">
@@ -149,8 +145,7 @@
                       data-sitekey="6Lf5UkglAAAAABh7Z6KEwDPPLMOrVf8pOLL-XUSX" data-callback="handleCaptchaResponse"
                       style="direction:ltr"></div>
                   </div>
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  <label class="entry__error entry__error--primary">
                   </label>
                 </div>
               </div>
@@ -207,7 +202,7 @@
     window.LOCALE = 'en';
     window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
-    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank 😊. ";
+    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank 😊";
 
     window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 

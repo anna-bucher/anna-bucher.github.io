@@ -357,6 +357,12 @@ h3.pre-sale {
   filter: hue-rotate(71deg);
 }
 
+.sib-form .entry__specification {
+  color: #8a9cb4;
+  margin: 0;
+  font-size: 80%;
+}
+
 p.agree {
   color: #e41cf8a6;
 }
