@@ -84,8 +84,8 @@ div.album-desc {
   0% { 
     color: #3c4858;
   }
-  100% { 
-    color: #9f9f9fcf;
+  90% { 
+    color: #ffffffcf;
   }
 }
 
@@ -139,14 +139,18 @@ h2.band small {
 #article .what {
   color: #3c4858;
   font-size: 1.4rem;
+  margin: 50px auto;
+  display: table;
+}
+
+#sib-container.what {
   border: 1px solid #e11bfe8f;
   border-radius: 10px;
   padding: 20px;
-  margin: 50px auto;
-  display: table;
   background: #05133199;
   box-shadow: 0 0 15px #ff996278;
 }
+
 
 #article .what b {
   color: #e41cf899;
