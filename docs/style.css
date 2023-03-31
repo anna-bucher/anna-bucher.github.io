@@ -121,19 +121,17 @@ div.album-desc {
 }
 
 h2.band {
-  margin: 2rem;
-  color: #e500ff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
+  color: #5e2165;
+  font-size: 1.4rem;
 
-  text-shadow: 0px 0px 15px #163979c7;
+  text-align: center;
   font-weight: bold;
 }
 
-h2.band small {
-  color: #5e2165;
-  font-size: 80%;
+h2.band b {
+  font-size: 2rem;
+  color: #00ffff73;
+  text-shadow: 0 0 15px #e20aff78;
 }
 
 #article .what {
@@ -154,13 +152,13 @@ h2.band small {
 
 
 #article .what b {
-  color: #e41cf899;
+  color: #e394ec;
 }
 #article .what .hand {
-  color: #7fffd48f;
+  color: #02fff7;
 }
 #article .what .paint {
-  color: #ff7ffb8f;
+  color: #88ff6f;
 }
 #article .what .loved {
   color: #ffffffcf;
