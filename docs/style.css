@@ -28,11 +28,6 @@ h1.album {
 }
 
 div.album-desc {
-  position: relative;
-  max-width: 300px;
-  display: table;
-  margin: -100px auto;
-  padding: 100px;
 }
 
 .album-desc img.tree {
@@ -210,7 +205,22 @@ svg.svgIcon-sphere {
 }
 
 
-@media (min-width:320px)  { 
+@media (min-device-width:320px)  { 
+  html {
+    font-size: 24px;
+  }
+  div.album-desc {
+    position: relative;
+    max-width: 80%;
+    margin: -5rem auto;
+    width: 100%;
+    height: 500px;
+    padding-top: 4rem;
+    margin-bottom: -2rem;
+  }
+  .album-desc p {
+
+  }
   #article p.what {
     line-height:150%;
   }
@@ -228,7 +238,7 @@ svg.svgIcon-sphere {
   }
 }
 
-@media (min-width:700px) { 
+@media (min-device-width:700px) {
   #connect {
     height: 600px;
   }
