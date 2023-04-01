@@ -59,7 +59,7 @@
         <div></div>
         <div id="sib-container" class="what sib-container--large sib-container--vertical">
           <form id="sib-form" method="POST"
-            action="https://6066d3c8.sibforms.com/serve/MUIEADISfEtGD4-tdxWKmXQEZ8fxp_Zve5bbgAUZ6vzIyWBZ8_9ZPh6HuYXveaRuok5XQ6EQAnb_hZfJC1QPALFiPCWe-RBPEVQHrkUvLgU4oqFZTiZ-6G_-kpZ15I8QfjWz9cv6nhXHiK1z_KFi6orqGp9Tf30wg3MDZTR380GbjUquZ7_yiIZOPTQgAUMhZ4-vEaZLZ_yFJSLN"
+            action="https://6066d3c8.sibforms.com/serve/MUIEALctbylG19hl2Vk4_2fNbOnKccWj-urG16usY4p38fhxdyWThh_K-db1i9ery3GXMv3X57hajvlu15G3YVuozA5HjN2NSUsqlAdLieKtXxSzuH4xnfBNnJ7axKvhM416V-5y3mPkujqHmS3zxZPlYRq6VQagZLKf_l1SzeM03WWy5AzGPiqMkB3Plx2VvNuWCmsV2dY3L61h"
             data-type="subscription">
             <div>
               <div class="sib-input sib-form-block">
@@ -130,23 +130,8 @@
 
             </div>
             <div>
-              <div class="sib-captcha sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <script>
-                      function handleCaptchaResponse() {
-                        var event = new Event('captchaChange');
-                        document.getElementById('sib-captcha').dispatchEvent(event);
-                      }
-                    </script>
-                    <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha"
-                      data-sitekey="6Lf5UkglAAAAABh7Z6KEwDPPLMOrVf8pOLL-XUSX" data-callback="handleCaptchaResponse">
-                    </div>
-                  </div>
-                  <label class="entry__error entry__error--primary">
-                  </label>
-                </div>
-              </div>
+              <div class="g-recaptcha" data-sitekey="6Lf5UkglAAAAABh7Z6KEwDPPLMOrVf8pOLL-XUSX"
+                data-callback="invisibleCaptchaCallback" data-size="invisible" onclick="executeCaptcha"></div>
             </div>
             <div>
               <div class="sib-form-block">
@@ -166,31 +151,7 @@
         </div>
       </div>
     </div>
-    <!-- End Sendinblue Form -->
-
-
     <!-- /SENDINBLUE -->
-    <!--
-    <div id="social">
-      <p>Be notified through:</p>
-      <a class="btn btn-icon btn-facebook" href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-      <a class="btn btn-icon btn-twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-      <a class="btn btn-icon btn-googleplus" href="#"><i class="fa fa-google-plus"></i><span>Google+</span></a>
-      <a class="btn btn-icon btn-pinterest" href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
-      <a class="btn btn-icon btn-linkedin" href="#"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
-    </div>
-
-    <p class='qr'>
-      <img src='unu-qr-s.png' />
-    </p>
-      TODO: 
-      1. email entry
-      2. follow on insta, facebook, etc
-      3. "share button" (with social card)
-
-    <h3>Pre-sale opening soon</h3>
-    <h3>Get the early bird price:</h3>
-    -->
   </div>
 
   <script>
@@ -198,7 +159,7 @@
     window.LOCALE = 'en';
     window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
-    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank 😊";
+    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank 🧐";
 
     window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
