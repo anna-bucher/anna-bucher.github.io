@@ -32,23 +32,10 @@ h1.album {
 
 div.album-desc {
   position: relative;
-  width: 300px;
+  max-width: 300px;
   display: table;
-  margin: -90px auto;
+  margin: -100px auto;
   padding: 100px;
-}
-
-.album-desc .love {
-  position: absolute;
-  text-align: center;
-  left: -80px;
-  opacity: 0.15;
-  text-shadow: 0 0 130px #00fffa;
-  top: -560px;
-  z-index:-1;
-  font-style: normal;
-  font-size: 420px;
-  display: none;
 }
 
 .album-desc img.tree {
@@ -61,24 +48,6 @@ div.album-desc {
   filter: drop-shadow(0 0 130px #00fffa);
   animation: shadow 18s infinite;
 }
-
-.album-desc .heart {
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  opacity:0.15;
-  z-index:-1;
-  background-image: url(heart.svg);
-  background-size: cover;
-  background-position-x: 22px;
-  background-position-y: -40px;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 130px #00fffa;
-  display:none;
-}
-
 
 @keyframes loved {
   0% { 
@@ -98,26 +67,14 @@ div.album-desc {
   }
 }
 
-.album-desc svg {
-  display: none;
-  position:absolute;
-  top:-30px;
-  left:40px;
-  bottom:0;
-  right:0;
-  opacity:0.9;
-  z-index:20;
-  filter: drop-shadow(0 0 130px #00fffa);
-  animation: shadow 3s infinite;
-}
-
 .album-desc p {
   position: relative;
   z-index:30;
-  font-size: 1.17rem;
+  font-size: 1.3rem;
   font-style: italic;
   text-align: center;
   white-space:pre-line;
+  text-shadow: 0 0 8px #211035;
 }
 
 h2.band {
@@ -132,22 +89,6 @@ h2.band b {
   font-size: 2rem;
   color: #00ffff73;
   text-shadow: 0 0 15px #e20aff78;
-}
-
-#article .what {
-  color: #3c4858;
-  font-size: 1.4rem;
-  margin: 50px auto;
-  display: table;
-}
-
-#sib-container.what {
-  font-size: inherit;
-  border: 1px solid #e11bfe8f;
-  border-radius: 10px;
-  padding: 20px;
-  background: #05133199;
-  box-shadow: 0 0 15px #ff996278;
 }
 
 
@@ -181,11 +122,6 @@ h3.pre-sale {
 /**** share buttons ****/
 
 
-
-#connect {
-  height: 600px;
-  padding: 0;
-}
 
 /*Pen code from this point on*/
 .btn {
@@ -364,3 +300,77 @@ h3.pre-sale {
 p.agree {
   color: #e41cf8a6;
 }
+
+#sib-form .entry__label {
+  display: inline;
+}
+
+#sib-form > div {
+  padding: 8px 0;
+}
+
+svg.svgIcon-sphere {
+  width:63px;
+  height:63px;
+}
+
+#sib-form .sib-form-block__button {
+  background: #e20aff;
+  font-weight: bold;
+  color: #121031;
+
+  border: 1px solid #e11bfe8f;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #0f0906cf;
+}
+
+#article .what {
+  text-align: center;
+  color: #3c4858;
+  font-size: 1.4rem;
+  margin: 20px;
+}
+
+
+@media (min-width:320px)  { 
+  #article p.what {
+    line-height:150%;
+  }
+  #connect {
+    padding: 0;
+  }
+  #sib-container.what {
+    margin: 50px 0 0 0;
+    font-size: inherit;
+    width: 100%;
+    border-top: 1px solid #e11bfe8f;
+    padding: 50px;
+    background: #05133199;
+    box-shadow: 0 0 15px #ff996278;
+  }
+}
+
+@media (min-width:700px) { 
+  #connect {
+    height: 600px;
+  }
+
+  #article .what {
+    color: #3c4858;
+    font-size: 1.4rem;
+    margin: 50px auto;
+    display: table;
+  }
+  #sib-container.what {
+    width: 600px;
+    display: table;
+    margin: 50px auto;
+    font-size: inherit;
+    border: 1px solid #e11bfe8f;
+    border-radius: 10px;
+    padding: 20px;
+    background: #05133199;
+    box-shadow: 0 0 15px #ff996278;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
