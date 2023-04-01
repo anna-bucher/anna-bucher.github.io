@@ -85,6 +85,10 @@ h2.band {
   font-weight: bold;
 }
 
+.thank-you h2.band {
+  margin-top: 60px;
+}
+
 h2.band b {
   font-size: 2rem;
   color: #00ffff73;
