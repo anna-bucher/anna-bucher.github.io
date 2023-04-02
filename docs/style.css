@@ -158,7 +158,6 @@ h2.band b {
 }
 
 .sib-form .entry__specification {
-  color: #8a9cb4;
   margin: 0;
   font-size: 80%;
 }
@@ -169,6 +168,10 @@ p.agree {
 
 #sib-form .entry__label {
   display: inline;
+}
+
+#sib-form .sib-form-block.validate {
+  text-align: right;
 }
 
 #sib-form > div {
