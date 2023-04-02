@@ -188,6 +188,8 @@ svg.svgIcon-sphere {
 }
 
 #sib-form .sib-form-block__button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
   background: #e20aff;
   font-weight: bold;
   color: #121031;
@@ -205,9 +207,9 @@ svg.svgIcon-sphere {
 }
 
 
-@media (min-device-width:320px)  { 
+@media (min-width:320px)  { 
   html {
-    font-size: 24px;
+    font-size: 32px;
   }
   div.album-desc {
     position: relative;
@@ -218,13 +220,11 @@ svg.svgIcon-sphere {
     padding-top: 4rem;
     margin-bottom: -2rem;
   }
-  .album-desc p {
-
-  }
   #article p.what {
     line-height:150%;
   }
   #connect {
+    font-size: 1rem;
     padding: 0;
   }
   #sib-container.what {
@@ -238,16 +238,33 @@ svg.svgIcon-sphere {
   }
 }
 
-@media (min-device-width:700px) {
-  #connect {
-    height: 600px;
+@media (min-device-width:800px) {
+  html {
+    font-size: 21px;
   }
+}
 
+@media (min-width:800px) {
+  html {
+    font-size: 21px;
+  }
+  div.album-desc {
+    position: relative;
+    max-width: 30rem;
+    margin: -5rem auto;
+    width: 100%;
+    padding-top: 4rem;
+    margin-bottom: -7rem;
+  }
   #article .what {
     color: #3c4858;
     font-size: 1.4rem;
     margin: 50px auto;
     display: table;
+  }
+
+  #connect {
+    height: 600px;
   }
   #sib-container.what {
     width: 600px;
