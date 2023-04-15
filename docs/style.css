@@ -63,6 +63,7 @@ div.album-desc .story {
 }
 
 h2.band {
+  padding-top: 4rem;
   color: #5e2165;
   font-size: 1.4rem;
 
@@ -304,5 +305,9 @@ html {
     border-radius: 10px;
     background: #05133199;
     box-shadow: 0 0 15px #ff996278;
+  }
+
+  h2.band {
+    padding-top: 1rem;
   }
 }
